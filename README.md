@@ -4,7 +4,7 @@ This repository contains reference files that describe the VarSkip primers used 
 
 In an attempt to reduce the impact of variants on amplification efficiency, these primers were designed using [PrimalSeq][1] after masking the [SARS-CoV-2 reference sequence][2] for SNVs observed more than 4000 times in [GISAID][3].
 
-They are commerically available at [NEBNext.com](https://www.nebnext.com/)
+They are commerically available at [NEB.com](https://www.neb.com/applications/ngs-sample-prep-and-target-enrichment/nebnext-artic-products-for-sars-cov-2-sequencing) as part of the ARTIC sequencing kits.
 
 The files can be used with analyis methods designed for other multiplex designs (e.g. [ARTIC](https://artic.network/ncov-2019)).
 
