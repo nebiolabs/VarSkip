@@ -11,6 +11,9 @@ VarSkip primers are commerically available at [NEB.com](https://www.neb.com/appl
 
 The files in this repository can be used with analyis methods designed for other multiplex designs (e.g. [ARTIC](https://artic.network/ncov-2019)). To avoid miscalling or masking variants in priming regions, it's important to use primer coordinates that match the primers used during amplification (e.g. do not use ARTICv3 primer files with VarSkip).
 
+
+The same information is presented in multiple formats for convenience. Most workflows should use [neb_vss1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss1a.primer.bed).  
+
 Analysis methods known to work:
  - [galaxy ARTIC](https://usegalaxy.eu/u/sars-cov2-bot/w/covid-19-variation-analysis-on-artic-pe-data-3)
  - [viralrecon](https://nf-co.re/viralrecon) (tested with illumina data)
