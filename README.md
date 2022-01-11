@@ -22,9 +22,16 @@ Analysis methods known to work:
 
    The ARTIC field bioinformatics pipeline is commonly used to analyize results produced on the Oxford Nanopore instruments. It requires a specific directory structure and primer naming to operate correctly. The schemes directory contains a reformatted primer annotation and reference genome that meet those constraints.
 
-   Example command (tune this to your instrument-specific model and directories):
+   Example commands (tune this to your instrument-specific model, primer set, and directories):
 
-   `artic minion --threads 4 --read-file example.fastq --scheme-directory schemes --scheme-version 1a NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
+   VarSkip 1a: 
+  `artic minion --threads 4 --read-file example_vss1a.fastq --scheme-directory schemes --scheme-version 1a NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
+
+   VarSkip 2: 
+  `artic minion --threads 4 --read-file example_vss2.fastq --scheme-directory schemes --scheme-version 2 NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
+
+   VarSkip 1a Long: 
+  `artic minion --threads 4 --read-file example_vsl1a.fastq --scheme-directory schemes --scheme-version 1a-long NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
 
 Many libraries produced using VarSkip primers are available via the NCBI SRA. e.g. [SRR16375192](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR16375192)
 
