@@ -27,8 +27,8 @@ Analysis methods known to work:
    VarSkip 1a: 
   `artic minion --threads 4 --read-file example_vss1a.fastq --scheme-directory schemes --scheme-version 1a NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
 
-   VarSkip 2: 
-  `artic minion --threads 4 --read-file example_vss2.fastq --scheme-directory schemes --scheme-version 2 NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
+   VarSkip 2a: 
+  `artic minion --threads 4 --read-file example_vss2a.fastq --scheme-directory schemes --scheme-version 2a NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
 
    VarSkip 1a Long: 
   `artic minion --threads 4 --read-file example_vsl1a.fastq --scheme-directory schemes --scheme-version 1a-long NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
