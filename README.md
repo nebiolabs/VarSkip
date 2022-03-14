@@ -10,7 +10,7 @@ More details can be found in scientific presentations:
 |Primer Set Name|Primer positions|Primer sequence details|
 |-------------|---------------------------|-----|
 |VarSkip 1a | [neb_vss1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.bed) |[neb_vss1a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.tsv)|
-|VarSkip 2 | [neb_vss2.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2.primer.bed) |[neb_vss2.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2.primer.tsv)|
+|VarSkip 2 | [neb_vss2a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2a.primer.bed) |[neb_vss2a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2a.primer.tsv)|
 |VarSkip Long 1a|[neb_vsl1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.bed) |[neb_vsl1a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.tsv)|
 
 VarSkip primers are commerically available at [NEB.com](https://www.neb.com/applications/ngs-sample-prep-and-target-enrichment/nebnext-artic-products-for-sars-cov-2-sequencing) as part of the ARTIC sequencing kits.
