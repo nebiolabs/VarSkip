@@ -11,16 +11,18 @@ More details can be found in scientific presentations:
 |-------------|---------------------------|-----|
 |VarSkip 1a | [neb_vss1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.bed) |[neb_vss1a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.tsv)|
 |VarSkip 2 | [neb_vss2a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2a.primer.bed) |[neb_vss2a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2a.primer.tsv)|
+|VarSkip 2b (2a + spike-ins)| [neb_vss2b.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2b.primer.bed) |[neb_vss2b.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2b.primer.tsv)|
 |VarSkip Long 1a|[neb_vsl1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.bed) |[neb_vsl1a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.tsv)|
 
 VarSkip primers are commerically available at [NEB.com](https://www.neb.com/applications/ngs-sample-prep-and-target-enrichment/nebnext-artic-products-for-sars-cov-2-sequencing) as part of the ARTIC sequencing kits.
 As of 2022-02-15 VarSkip 2 primers have replaced VarSkip 1a primers in these products.
+As of 2022-04-12, 2 supplemental primers have been tested as spike-in additions to the VarSkip2 pools to improve coverage of amplicons 49 and 57 which are affected by common BA.2 variants.
 
 VarSkip Long primers are available as a [custom product](https://www.neb.com/customized-solutions/contact-us) for larger volume sequencing. 
 
 The files in this repository can be used with analyis methods designed for other multiplex designs (e.g. [ARTIC](https://artic.network/ncov-2019)). To avoid miscalling or masking variants in priming regions, it's important to use primer coordinates that match the primers used during amplification (e.g. do not use ARTICv3 primer files with VarSkip libraries).
 
-The same information is presented in multiple formats for convenience. Most workflows should use [neb_vss1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss1a.primer.bed) or [neb_vss2.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2.primer.bed).  
+The same information is presented in multiple formats for convenience. Most workflows should use [neb_vss1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss1a.primer.bed) or [neb_vss2b.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2b.primer.bed).  
 
 Analysis methods known to work:
  - [galaxy ARTIC](https://usegalaxy.eu/u/sars-cov2-bot/w/covid-19-variation-analysis-on-artic-pe-data-3)
