@@ -12,11 +12,13 @@ More details can be found in scientific presentations:
 |VarSkip 1a | [neb_vss1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.bed) |[neb_vss1a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.tsv)|
 |VarSkip 2 | [neb_vss2a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2a.primer.bed) |[neb_vss2a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2a.primer.tsv)|
 |VarSkip 2b (2a + spike-ins)| [neb_vss2b.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2b.primer.bed) |[neb_vss2b.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vss2b.primer.tsv)|
+|NEBNext SARS-CoV-2 Primers (VarSkip 2f: 2b + 20 alternate primers)| [NEBNext_SARS-CoV-2_Primers.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/NEBNext_SARS-CoV-2_Primers.primer.bed) |[NEBNext_SARS-CoV-2_Primers.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/NEBNext_SARS-CoV-2_Primers.primer.tsv)|
 |VarSkip Long 1a|[neb_vsl1a.primer.bed](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.bed) |[neb_vsl1a.primer.tsv](https://github.com/nebiolabs/VarSkip/blob/main/neb_vsl1a.primer.tsv)|
 
 VarSkip primers are commerically available at [NEB.com](https://www.neb.com/applications/ngs-sample-prep-and-target-enrichment/nebnext-artic-products-for-sars-cov-2-sequencing) as part of the ARTIC sequencing kits.
 As of 2022-02-15 VarSkip 2 primers have replaced VarSkip 1a primers in these products.
 As of 2022-04-12, 2 supplemental primers have been tested as spike-in additions to the VarSkip2 pools to improve coverage of amplicons 49 and 57 which are affected by common BA.2 variants.
+The NEBNext SARS-CoV-2 Primers set adds 20 alternate primers to VarSkip 2b. In the ARTIC `schemes` directory it is version `V2f` (`--scheme-version 2f`), so V2f is an alias of "NEBNext_SARS-CoV-2_Primers".
 
 VarSkip Long primers are available as a [custom product](https://www.neb.com/customized-solutions/contact-us) for larger volume sequencing. 
 
@@ -39,6 +41,9 @@ Analysis methods known to work:
 
    VarSkip 2a: 
   `artic minion --threads 4 --read-file example_vss2a.fastq --scheme-directory schemes --scheme-version 2a NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
+
+   NEBNext SARS-CoV-2 Primers (VarSkip 2f): 
+  `artic minion --threads 4 --read-file example_nebnext.fastq --scheme-directory schemes --scheme-version 2f NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
 
    VarSkip 1a Long: 
   `artic minion --threads 4 --read-file example_vsl1a.fastq --scheme-directory schemes --scheme-version 1a-long NEB_VarSkip Example --skip-nanopolish --medaka --medaka-model r941_min_fast_g303`
